@@ -308,55 +308,32 @@ function ProJumpModal({ onClose }) {
   )
 }
 
-function Precios() {
+function AccesoProJump() {
   const [showModal, setShowModal] = React.useState(false)
-  const checks1 = ['Acceso completo a la app','Todos los programas','Registro de series','Temporizadores','Biblioteca de ejercicios','Progreso y estadisticas']
-  const checks2 = ['Todo lo de App Sola','Precio especial permanente','ProJump integrado en la app','Soporte prioritario','Futuros programas con descuento','Acceso a comunidad']
+  const beneficios = ['ProJump integrado directamente en la app','Registro de series, pesos y progreso','Temporizadores y modo foco','Biblioteca de mas de 200 ejercicios','Seguimiento semana a semana']
   return (
     <>
-      <section id="precios" className="relative grid-bg py-32 px-4" style={{background:'#070707'}}>
-        <div className="max-w-5xl mx-auto">
+      <section id="acceso" className="relative grid-bg py-32 px-4" style={{background:'#070707'}}>
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 fade-up">
-            <p className="text-xs uppercase tracking-[0.3em] font-semibold mb-4" style={{color:'#737373'}}>PRECIOS</p>
+            <p className="text-xs uppercase tracking-[0.3em] font-semibold mb-4" style={{color:'#737373'}}>ACCESO</p>
             <h2 className="font-black uppercase" style={{fontSize:'clamp(2rem,5vw,4rem)',letterSpacing:'-0.03em',color:'#F5F5F5'}}>
-              SIMPLE Y <span className="text-gradient-gold">DIRECTO.</span>
+              YA TENES <span className="text-gradient-gold">PROJUMP.</span>
             </h2>
-            <p className="mt-4 max-w-lg mx-auto" style={{color:'#737373'}}>Sin planes confusos. Acceso completo desde el primer dia.</p>
+            <p className="mt-4 max-w-lg mx-auto" style={{color:'#A3A3A3'}}>Pedí tu código de acceso y empezá a entrenar con la app en minutos.</p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <div className="fade-up rounded-2xl p-8 border" style={{background:'#111111',borderColor:'#262626'}}>
-              <p className="text-xs font-black uppercase tracking-widest mb-4" style={{color:'#737373'}}>APP SOLA</p>
-              <div className="mb-6">
-                <div className="flex items-end gap-2 mb-1">
-                  <span className="font-black" style={{fontSize:'3.5rem',lineHeight:1,color:'#F5F5F5',letterSpacing:'-0.04em'}}>$8.000</span>
-                  <span className="mb-2" style={{color:'#737373'}}>/mes</span>
-                </div>
-                <p className="text-sm">o <span className="font-bold" style={{color:'#C9A646'}}>$60.000/año</span> <span style={{color:'#737373'}}>— 2 meses gratis</span></p>
-              </div>
-              <div className="gold-separator mb-6"/>
-              <ul className="space-y-3 mb-8">
-                {checks1.map((item,i) => (<li key={i} className="flex items-center gap-2.5 text-sm" style={{color:'#A3A3A3'}}><span style={{color:'#22C55E'}}><CheckIcon/></span>{item}</li>))}
-              </ul>
-              <a href="https://athleteosapp.vercel.app" className="w-full inline-flex items-center justify-center font-black uppercase text-sm rounded-xl transition-all"
-                style={{height:'52px',border:'1px solid #333',color:'#F5F5F5',letterSpacing:'0.08em'}}>EMPEZAR AHORA</a>
+          <div className="fade-up max-w-lg mx-auto relative rounded-2xl p-10 border text-center" style={{background:'#161616',borderColor:'rgba(201,166,70,0.4)',boxShadow:'0 0 60px rgba(201,166,70,0.07)'}}>
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full" style={{background:'#C9A646',color:'black'}}>PROJUMP MEMBER</div>
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{background:'rgba(201,166,70,0.12)',border:'1px solid rgba(201,166,70,0.25)'}}>
+              <span className="text-2xl">🔑</span>
             </div>
-            <div className="fade-up relative rounded-2xl p-8 border" style={{background:'#161616',borderColor:'rgba(201,166,70,0.4)',boxShadow:'0 0 50px rgba(201,166,70,0.08)'}}>
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full" style={{background:'#C9A646',color:'black'}}>PARA PROJUMPERS</div>
-              <p className="text-xs font-black uppercase tracking-widest mb-4" style={{color:'#C9A646'}}>YA COMPRE PROJUMP</p>
-              <div className="mb-6">
-                <div className="flex items-end gap-2 mb-1">
-                  <span className="font-black" style={{fontSize:'3.5rem',lineHeight:1,color:'#F5F5F5',letterSpacing:'-0.04em'}}>$5.000</span>
-                  <span className="mb-2" style={{color:'#737373'}}>/mes</span>
-                </div>
-                <p className="text-sm font-semibold" style={{color:'#C9A646'}}>Para siempre &mdash; por ser parte</p>
-              </div>
-              <div className="gold-separator mb-6"/>
-              <ul className="space-y-3 mb-8">
-                {checks2.map((item,i) => (<li key={i} className="flex items-center gap-2.5 text-sm" style={{color:'#A3A3A3'}}><span style={{color:'#22C55E'}}><CheckIcon/></span>{item}</li>))}
-              </ul>
-              <button onClick={() => setShowModal(true)} className="w-full inline-flex items-center justify-center font-black uppercase text-sm rounded-xl transition-all hover:opacity-90"
-                style={{height:'52px',background:'#C9A646',color:'black',letterSpacing:'0.08em'}}>YA SOY DE PROJUMP</button>
-            </div>
+            <h3 className="font-black text-2xl uppercase mb-3" style={{color:'#F5F5F5',letterSpacing:'-0.02em'}}>Tu acceso te espera</h3>
+            <p className="text-sm leading-relaxed mb-8" style={{color:'#737373'}}>Completá el formulario, verificamos tu compra y te mandamos el código por mail para activar tu cuenta.</p>
+            <ul className="space-y-3 mb-8 text-left">
+              {beneficios.map((item,i) => (<li key={i} className="flex items-center gap-2.5 text-sm" style={{color:'#A3A3A3'}}><span style={{color:'#22C55E'}}><CheckIcon/></span>{item}</li>))}
+            </ul>
+            <button onClick={() => setShowModal(true)} className="w-full inline-flex items-center justify-center gap-2 font-black uppercase text-sm rounded-xl transition-all hover:opacity-90"
+              style={{height:'56px',background:'#C9A646',color:'black',letterSpacing:'0.08em'}}>PEDIR MI CÓDIGO <ArrowIcon/></button>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 gold-separator"/>
@@ -398,7 +375,7 @@ function CTAFinal() {
             style={{height:'60px',paddingLeft:'2.5rem',paddingRight:'2.5rem',background:'#E11D2E',color:'white',letterSpacing:'0.08em',boxShadow:'0 0 50px rgba(225,29,46,0.35)'}}>
             EMPEZAR CON ATHLETEOS <ArrowIcon/>
           </a>
-          <p className="text-xs mt-5" style={{color:'#737373'}}>Sin compromisos. Empeza gratis.</p>
+          <p className="text-xs mt-5" style={{color:'#737373'}}>Necesitas un código para ingresar. Solicitalo arriba.</p>
         </div>
       </div>
     </section>
@@ -433,7 +410,7 @@ export default function App() {
   useScrollReveal()
   return (
     <div style={{minHeight:'100vh',background:'#070707'}}>
-      <Hero/><ElProblema/><Features/><Programas/><ComoFunciona/><Precios/><ImpactBand/><CTAFinal/><Footer/>
+      <Hero/><ElProblema/><Features/><Programas/><ComoFunciona/><AccesoProJump/><ImpactBand/><CTAFinal/><Footer/>
     </div>
   )
 }
