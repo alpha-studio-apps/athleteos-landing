@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#070707"/>
+  <!-- subtle grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <!-- glow -->
+  <ellipse cx="600" cy="315" rx="400" ry="200" fill="#E11D2E" opacity="0.06"/>
+  <!-- logo -->
+  <rect x="520" y="160" width="160" height="160" rx="36" fill="#E11D2E"/>
+  <text x="600" y="282" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="white" text-anchor="middle" letter-spacing="-2">AOS</text>
+  <!-- wordmark -->
+  <text x="600" y="380" font-family="Arial Black, sans-serif" font-weight="900" font-size="48" fill="#F5F5F5" text-anchor="middle" letter-spacing="-1">AthleteOS</text>
+  <!-- tagline -->
+  <text x="600" y="435" font-family="Arial, sans-serif" font-weight="400" font-size="22" fill="#737373" text-anchor="middle" letter-spacing="4">ENTRENATE CON DIRECCION</text>
+</svg>
